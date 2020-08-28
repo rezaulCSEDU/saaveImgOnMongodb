@@ -5,10 +5,8 @@ var mongoose = require('mongoose')
 
 var fs = require('fs');
 var path = require('path');
-require('dotenv/config');
-
-
 var multer = require('multer');
+require('dotenv/config');
 // Connecting to the database
 mongoose.connect('mongodb+srv://reza:105796@cluster0.ywkip.mongodb.net/imgTest', {
   useNewUrlParser: true,
@@ -23,11 +21,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json())
 
 // Set EJS as templating engine
-app.set("view engine", "ejs");
-
-var fs = require('fs');
-var path = require('path');
-var multer = require('multer');
+app.set("view engine", "ejs
 
 var storage = multer.diskStorage({
   destination: (req, file, cb) => {
